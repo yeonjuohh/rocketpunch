@@ -10,35 +10,35 @@
 
 ## 3. 전처리
 **blog, cover, employee_count, exit_type, found_date, github, googleplus, instagram, kakao_story, logo, phone, pinterest, twitter, yellow_id, youtube**  
-NaN이면 1 아니면 0인 binary 변수로 변환
+- NaN이면 1 아니면 0인 binary 변수로 변환
 
 **can_military_service**  
-범주가 3개인 categorical 변수 -> one-hot encoding
+- 범주가 3개인 categorical 변수 -> one-hot encoding
 
 **description, name**  
-training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_spam' 추가 -> 0 에서 1 사이로 표준화  
-training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_ham' 추가 -> 0 에서 1 사이로 표준화  
-'변수이름_spam'이 '변수이름_ham'보다 크면 1 아니면 0인 categorical 변수 '변수이름_diff' 추가  
-새로운 변수 추가 후 삭제
+- training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_spam' 추가 -> 0 에서 1 사이로 표준화  
+- training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_ham' 추가 -> 0 에서 1 사이로 표준화  
+- '변수이름_spam'이 '변수이름_ham'보다 크면 1 아니면 0인 categorical 변수 '변수이름_diff' 추가  
+- 새로운 변수 추가 후 삭제
 
 **homepage**  
-글자수를 나타내는 새로운 변수 'homepage_n' 추가 후 삭제 -> 0 에서 1 사이로 표준화  
+- 글자수를 나타내는 새로운 변수 'homepage_n' 추가 후 삭제 -> 0 에서 1 사이로 표준화  
 
 **overview**  
-글자수를 나타내는 새로운 변수 'overview_n' 추가 -> 0 에서 1 사이로 표준화   
-training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_spam' 추가 -> 0 에서 1 사이로 표준화  
-training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_ham' 추가 -> 0 에서 1 사이로 표준화  
-'overview_spam'이 'overview_ham'보다 크면 1 아니면 0인 categorical 변수 'overview_diff' 추가  
-새로운 변수 추가 후 삭제
+- 글자수를 나타내는 새로운 변수 'overview_n' 추가 -> 0 에서 1 사이로 표준화   
+- training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_spam' 추가 -> 0 에서 1 사이로 표준화  
+- training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_ham' 추가 -> 0 에서 1 사이로 표준화  
+- 'overview_spam'이 'overview_ham'보다 크면 1 아니면 0인 categorical 변수 'overview_diff' 추가  
+- 새로운 변수 추가 후 삭제
 
 **permalink**  
-numeric이면 1 아니면 0인 binary 변수 'pm_binary'로 변환
+- numeric이면 1 아니면 0인 binary 변수 'pm_binary'로 변환
 
 **viewcount**  
-0 에서 1 사이로 표준화  
+- 0 에서 1 사이로 표준화  
 
 **num_nan**  
-새로운 변수로 각 observation의 NaN 개수를 나타냄 -> 0 에서 1 사이로 표준화  
+- 새로운 변수로 각 observation의 NaN 개수를 나타냄 -> 0 에서 1 사이로 표준화  
 
 ## 4. 분석 방법
 **Random forest 이용**  
