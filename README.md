@@ -28,7 +28,7 @@ training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하
 training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_ham' 추가 -> 표준화  
 
 #### permalink
-numeric 여부를 나타내는 binary 변수로 변환
+numeric 여부를 나타내는 binary 변수 'pm_binary'로 변환
 
 #### viewcount
 표준화
@@ -58,3 +58,9 @@ recall = 45.95%
 f1 = 10.59%  
 
 ![alt text](importance.png)
+
+name_spam, pm_binary, view_count, description_spam, name_ham 등이 중요한 변수로 사용 됨  
+name_spam : training 데이터의 스팸 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
+pm_binary : numeric 여부를 나타내는 변수  
+description_spam : training 데이터의 스팸 계정 description에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
+name_ham : training 데이터의 정상 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
