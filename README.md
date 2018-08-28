@@ -57,4 +57,4 @@ precision = 5.99%
 recall = 45.95%
 f1 = 10.59%
 
-![alt text](https://github.com/yeonjuohh/rocketpunch/importance.png)
+![alt text](importance.png)
