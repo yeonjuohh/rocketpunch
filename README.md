@@ -56,10 +56,10 @@ precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 
 | 0      | 13415 | 444   |
 | 1      | 42    | 32    |
 
-오분류율 = 4.12%  
-precision = 5.99%  
-recall = 45.95%  
-**f1 = 10.59%**  
+오분류율 = 3.49%  
+precision = 6.72%  
+recall = 43.24%  
+**f1 = 11.64%%**  
 
 ![alt text](importance.png)
 
