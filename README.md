@@ -4,7 +4,7 @@
 등록되는 계정의 스팸 여부 판단
 
 ## 데이터
-- 스팸 계정 369개, 정상 계정 69297개로 전체의 0.5%가 스팸인 unbalanced 데이터  
+- 스팸 계정 369개, 정상 계정 69297개로 전체 데이터의 0.5%가 스팸인 unbalanced 데이터  
 - 전체 데이터를 6 : 2 : 2로 나누어 training, validation, test로 이용
 - 결측치가 대부분
 
@@ -43,7 +43,7 @@ numeric 여부를 나타내는 binary 변수 'pm_binary'로 변환
 3. Able to perform as well as more complex model  
 
 unbalanced 데이터이기 때문에 y = 1(계정은 스팸이다)를 예측하는 것이 중요  
-precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 10-folds cross validation를 이용해 찾고자 함  
+precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 10-folds cross validation를 이용해 찾고자   
 
 ## 분석 결과
 
