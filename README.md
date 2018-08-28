@@ -44,3 +44,8 @@ numeric 여부를 나타내는 binary 변수로 변환
 
 unbalanced 데이터이기 때문에 y = 1(계정은 스팸이다)를 예측하는 것이 중요  
 precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 10-folds cross validation를 이용해 찾고자 함  
+
+## 분석 결과
+| |0|1|
+|0|13325|534|
+|1|40|34|
