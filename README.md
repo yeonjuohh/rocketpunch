@@ -8,7 +8,7 @@
 - 전체 데이터를 6 : 2 : 2로 나누어 training, validation, test로 이용
 - 결측치가 대부분
 
-## 3. 변수 전처리
+## 3. 전처리
 **blog, cover, employee_count, exit_type, found_date, github, googleplus, instagram, kakao_story, logo, phone, pinterest, twitter, yellow_id, youtube**
 NaN 여부를 나타내는 binary 변수로 변환
 
