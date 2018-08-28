@@ -53,8 +53,8 @@ precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 
 
 |        | 0     | 1     |
 | ------ |:-----:|:-----:|
-| 0      | 13325 | 534   |
-| 1      | 40    | 34    |
+| 0      | 13415 | 444   |
+| 1      | 42    | 32    |
 
 오분류율 = 4.12%  
 precision = 5.99%  
@@ -63,28 +63,18 @@ recall = 45.95%
 
 ![alt text](importance.png)
 
-**name_spam, pm_binary, view_count, description_spam, name_ham 등이 중요한 변수로 사용 됨**  
+**name_spam, name_diff, pm_binary, view_count, description_diff 등이 중요한 변수로 사용 됨**  
 - name_spam : training 데이터의 스팸 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
+- name_diff : name_spam이 name_ham보다 큰 값을 가지는지 나타내는 변수
 - pm_binary : numeric 여부를 나타내는 변수  
-- description_spam : training 데이터의 스팸 계정 description에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
-- name_ham : training 데이터의 정상 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
+- description_diff : name_description이 name_description보다 큰 값을 가지는지 나타내는 변수
 
 ## 6. 추가 분석
 ### Under sampling
 
 |        | 0     | 1     |
 | ------ |:-----:|:-----:|
-| 0      | 13227 | 632   |
+| 0      | 13359 | 500   |
 | 1      | 40    | 34    |
-
-정상 계정 80%만 이용해보았으나 computing time이 크게 줄어들지 않고 오히려 f1이 낮아지기 때문에 전체 데이터를 사용하는 것이 더 나아보임
-
-### Fitting random forest one more time
-스팸이라고 예측한 계정과 정상이라고 예측한 계정에 각각 random forest를 한 번 더 적합
-
-|        | 0     | 1     |
-| ------ |:-----:|:-----:|
-| 0      | 13288 | 571   |
-| 1      | 38    | 36    |
 
 recall은 높아졌지만 precision은 낮아짐
