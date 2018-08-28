@@ -9,32 +9,32 @@
 - 결측치가 대부분
 
 ## 3. 전처리
-**blog, cover, employee_count, exit_type, found_date, github, googleplus, instagram, kakao_story, logo, phone, pinterest, twitter, yellow_id, youtube**
+**blog, cover, employee_count, exit_type, found_date, github, googleplus, instagram, kakao_story, logo, phone, pinterest, twitter, yellow_id, youtube**  
 NaN 여부를 나타내는 binary 변수로 변환
 
-**can_military_service**
+**can_military_service**  
 범주가 3개인 categorical 변수 -> one-hot encoding
 
-**description, name**
-training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_spam' 추가 -> 표준화  
-training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_ham' 추가 -> 표준화  
+**description, name**  
+training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_spam' 추가 -> 0 에서 1 사이로 표준화  
+training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_ham' 추가 -> 0 에서 1 사이로 표준화  
 
-**homepage**
+**homepage**  
 사용 된 글자수를 나타내는 새로운 변수 'homepage_n' 추가
 
-**overview**
+**overview**  
 사용 된 글자수를 나타내는 새로운 변수 'overview_n' 추가  
-training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_spam' 추가 -> 표준화  
-training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_ham' 추가 -> 표준화  
+training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_spam' 추가 -> 0 에서 1 사이로 표준화  
+training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_ham' 추가 -> 0 에서 1 사이로 표준화  
 
-**permalink**
+**permalink**  
 numeric 여부를 나타내는 binary 변수 'pm_binary'로 변환
 
-**viewcount**
-표준화
+**viewcount**  
+0 에서 1 사이로 표준화  
 
-**num_nan**
-각 observation의 NaN 개수를 나타내는 변수 -> 표준화
+**num_nan**  
+각 observation의 NaN 개수를 나타내는 변수 -> 0 에서 1 사이로 표준화  
 
 ## 4. 분석 방법
 **Random forest 이용**  
