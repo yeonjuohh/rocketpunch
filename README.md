@@ -37,7 +37,7 @@ numeric 여부를 나타내는 binary 변수 'pm_binary'로 변환
 각 observation의 NaN 개수를 나타내는 변수 -> 표준화
 
 ## 분석 방법
-#### Random forest 이용  
+**Random forest 이용**  
 1. Hyperparameter tuning이 쉬움  
 2. Computing time이 짧음  
 3. Able to perform as well as more complex model  
@@ -55,12 +55,19 @@ precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 
 오분류율 = 4.12%  
 precision = 5.99%  
 recall = 45.95%  
-f1 = 10.59%  
+**f1 = 10.59%**  
 
 ![alt text](importance.png)
 
-name_spam, pm_binary, view_count, description_spam, name_ham 등이 중요한 변수로 사용 됨  
+**name_spam, pm_binary, view_count, description_spam, name_ham 등이 중요한 변수로 사용 됨**  
 name_spam : training 데이터의 스팸 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
 pm_binary : numeric 여부를 나타내는 변수  
 description_spam : training 데이터의 스팸 계정 description에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
 name_ham : training 데이터의 정상 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
+
+## 추가 분석
+### Under sampling
+computing time이 크게 줄어들지 않고 오히려 f1이 낮아지기 때문에 전체 데이터를 사용하는 것이 더 나아보임
+
+### Fitting random forest one more time
+
