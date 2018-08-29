@@ -56,10 +56,10 @@ precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 
 | 0      | 13758 | 101   |
 | 1      | 43    | 31    |
 
-Misclassification rate :  1.03%
-Recall :  41.89%
-Precision :  23.48%
-**f1 :  30.1%**
+Misclassification rate :  1.03%  
+Recall :  41.89%  
+Precision :  23.48%  
+**f1 :  30.1%**  
 
 ![alt text](importance.png)
 
@@ -77,10 +77,10 @@ Precision :  23.48%
 | 0      | 13756 | 103   |
 | 1      | 43    | 31    |
 
-Misclassification rate :  1.05%
-Recall :  41.89%
-Precision :  23.13%
-**f1 :  29.81%**
+Misclassification rate :  1.05%  
+Recall :  41.89%  
+Precision :  23.13%  
+**f1 :  29.81%**  
 
 정상 데이터의 80%만 이용  
 precision이 조금 감소하였으나 전체 전체 데이터를 사용했을때와 큰 차이를 보이지 않음  
@@ -94,10 +94,10 @@ precision을 포기한다면 under sampling을 통한 computing time 감소를 �
 | 0      | 13752 | 107   |
 | 1      | 40    | 34    |
 
-Misclassification rate :  1.06%
-Recall :  45.95%
-Precision :  24.11%
-**f1 :  31.63%**
+Misclassification rate :  1.06%  
+Recall :  45.95%  
+Precision :  24.11%  
+**f1 :  31.63%**  
 
 오분류율은 높아졌지만, f1 값은 감소  
 하지만 random forest를 한 번 적합했을때와 큰 차이는 없음  
