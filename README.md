@@ -18,7 +18,7 @@
 **description, name**  
 - training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_spam' 추가 -> 0 에서 1 사이로 표준화  
 - training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 '변수이름_ham' 추가 -> 0 에서 1 사이로 표준화  
-- '변수이름_spam'이 '변수이름_ham'보다 크면 1 아니면 0인 categorical 변수 '변수이름_diff' 추가  
+- '변수이름_spam'이 '변수이름_ham'보다 크면 1 아니면 0인 binary 변수 '변수이름_diff' 추가  
 - 새로운 변수 추가 후 삭제
 
 **homepage**  
@@ -28,7 +28,7 @@
 - 글자수를 나타내는 새로운 변수 'overview_n' 추가 -> 0 에서 1 사이로 표준화   
 - training 데이터의 스팸 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_spam' 추가 -> 0 에서 1 사이로 표준화  
 - training 데이터의 정상 계정에서 사용 된 단어를 몇 개 포함하고 있는지 나타내는 새로운 변수 'overview_ham' 추가 -> 0 에서 1 사이로 표준화  
-- 'overview_spam'이 'overview_ham'보다 크면 1 아니면 0인 categorical 변수 'overview_diff' 추가  
+- 'overview_spam'이 'overview_ham'보다 크면 1 아니면 0인 binary 변수 'overview_diff' 추가  
 - 새로운 변수 추가 후 삭제
 
 **permalink**  
