@@ -56,31 +56,48 @@ precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 
 | 0      | 13758 | 101   |
 | 1      | 43    | 31    |
 
-오분류율 = 1.03%  
-precision = 23.48%  
-recall = 41.89%  
-**f1 = 30.1%%**  
+Misclassification rate :  1.03%
+Recall :  41.89%
+Precision :  23.48%
+**f1 :  30.1%**
 
 ![alt text](importance.png)
 
-**name_spam, name_diff, pm_binary, view_count, description_diff 등이 중요한 변수로 사용 됨**  
-- name_spam : training 데이터의 스팸 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
-- name_diff : name_spam이 name_ham보다 큰 값을 가지는지 나타내는 변수
+**pm_binary, name_spam, name_diff_1, view_count, name_diff_2 등이 중요한 변수로 사용 됨**  
 - pm_binary : numeric 여부를 나타내는 변수  
-- description_diff : name_description이 name_description보다 큰 값을 가지는지 나타내는 변수
+- name_spam : training 데이터의 스팸 계정 name에 사용 된 단어를 몇 개 포함하고 있는지 나타내는 변수  
+- name_diff_1 : 'name_spam'이 'name_ham'보다 크면 1 아니면 0을 나타내는 binary 변수
+- name_diff_2 : 'name_spam'이 'name_ham'보다 작으면 1 아니면 0을 나타내는 binary 변수
 
 ## 6. 추가 분석
 ### Under sampling
 
 |        | 0     | 1     |
 | ------ |:-----:|:-----:|
-| 0      | 13752 | 107   |
+| 0      | 13756 | 103   |
 | 1      | 43    | 31    |
 
-정상 데이터의 60%만 이용  
-precision이 조금 낮아졌으나 전체 데이터를 사용했을때와 f1값은 큰 차이를 보이지 않음  
-under sampling을 통한 computing time 감소를 기대해볼 수 있음
+Misclassification rate :  1.05%
+Recall :  41.89%
+Precision :  23.13%
+**f1 :  29.81%**
+
+정상 데이터의 80%만 이용  
+precision이 조금 감소하였으나 전체 전체 데이터를 사용했을때와 큰 차이를 보이지 않음  
+precision을 포기한다면 under sampling을 통한 computing time 감소를 기대해볼 수 있음
 
 ### Fitting random forest again
 스팸으로 예측한 계정과 정상으로 예측한 계정 각각에 random forest를 한 번 더 모델링
 
+|        | 0     | 1     |
+| ------ |:-----:|:-----:|
+| 0      | 13752 | 107   |
+| 1      | 40    | 34    |
+
+Misclassification rate :  1.06%
+Recall :  45.95%
+Precision :  24.11%
+**f1 :  31.63%**
+
+오분류율은 높아졌지만, f1 값은 감소  
+하지만 random forest를 한 번 적합했을때와 큰 차이는 없음  
