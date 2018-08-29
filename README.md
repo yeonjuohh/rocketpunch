@@ -83,7 +83,7 @@ Precision :  23.13%
 **f1 :  29.81%**  
 
 정상 데이터의 80%만 이용  
-precision이 조금 감소하였으나 전체 전체 데이터를 사용했을때와 큰 차이를 보이지 않음  
+precision이 조금 감소하였으나 전체 데이터를 사용했을때와 큰 차이를 보이지 않음  
 precision을 포기한다면 under sampling을 통한 computing time 감소를 기대해볼 수 있음
 
 ### Fitting random forest again
