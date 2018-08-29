@@ -44,7 +44,7 @@
 **Random forest 이용**  
 1. Hyperparameter tuning이 쉬움  
 2. Computing time이 짧음  
-3. Able to perform as well as the more complex model  
+3. Able to perform as well as the more complex models   
 
 unbalanced 데이터이기 때문에 y = 1(계정은 스팸이다)를 예측하는 것이 중요  
 precision과 recall의 가중평균인 f1을 최대로 하는 hyperparameter를 10-folds cross validation를 이용해 찾고자 하였음 
